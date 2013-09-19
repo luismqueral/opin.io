@@ -1,0 +1,74 @@
+<!-- 
+
+  --------   -----------  --------  ----    ---- . --------    --------   
+ **********  ************ ********  *****   ****   ********   **********  
+----    ---- ---      ---   ----    ------  ----     ----    ----    ---- 
+***      *** ************   ****    ************     ****    ***      *** 
+---      --- -----------    ----    ------------     ----    ---      --- 
+****    **** ****           ****    ****  ******     ****    ****    **** 
+ ----------  ----         --------  ----   -----   --------   ----------  
+  ********   ****         ********  ****    ****   ********    ********   
+                                                                           
+ 
+                       designed by luis queral, 2013
+
+ -->
+
+<!--
+removed answered feature
+adding queries feature
+-->
+
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="jquery/jquery-1.9.1.min.js"></script>
+
+<script type="text/javascript">
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 380) {
+        $('#search').css('top', $(window).scrollTop());
+    }
+}
+);
+
+</script>
+
+</head>
+
+
+<body>
+
+ <div id="header">
+ 	<div class="container">
+	 	<div class="logo"><img src="images/logo.png"><h1>opin.io</h1></div>
+	 	
+	 	<div class="nav">
+	 		<span> <h2><a href="#"> blog </a></h2> </span>
+	 		<span> <h2><a href="#"> about </a></h2> </span>
+	 		<span> <h2><a href="#"> contact </a> </h2> </span>
+	 		<a href="#"><img class= "twitter" src="images/twitter.png"></a>
+	 	</div>
+	 </div>
+</div>
+
+<div id="index_info">
+
+
+
+</div>
+
+<div class="search">
+	<form method="get" action="http://ieatthings.com/query.html" id="search">
+	<input name="q" type="text" size="40" placeholder="Search..." />
+</div>
+
+
+</div>
+
+<div id="index_content">
+
+
+
+</div>
+
+</body>

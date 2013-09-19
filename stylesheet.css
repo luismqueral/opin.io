@@ -1,0 +1,314 @@
+ /* 
+
+  --------   -----------  --------  ----    ---- . --------    --------   
+ **********  ************ ********  *****   ****   ********   **********  
+----    ---- ---      ---   ----    ------  ----     ----    ----    ---- 
+***      *** ************   ****    ************     ****    ***      *** 
+---      --- -----------    ----    ------------     ----    ---      --- 
+****    **** ****           ****    ****  ******     ****    ****    **** 
+ ----------  ----         --------  ----   -----   --------   ----------  
+  ********   ****         ********  ****    ****   ********    ********   
+                                                                           
+ 
+           designed by luis queral, 2013
+
+*/
+
+ /* ---------------- style reset ---------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	top: 0;
+	position: relative;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a:-webkit-any-link {
+    color: blue;
+    text-decoration: none;
+}
+
+/* ---------------- style reset end ---------------- */
+
+
+body {
+	min-width: 900px;
+}
+
+h1 {
+	font-size: 17px;
+	font-weight: bold;
+	font-family: arial, verdana, sans-serif;
+}
+
+h2 {
+	font-size: 15px;
+	font-weight: bold;
+	font-family: arial, verdana, sans-serif;
+	color: #6a6a6a;
+	text-decoration: none !important;
+	margin: -3px 0 0 0;
+}
+
+h2 a:link {color: #6a6a6a;}
+h2 a:visited {color: #6a6a6a;}
+h2 a:hover {color: #6a6a6a; text-decoration: underline;}
+h2 a:active {color: #6a6a6a;}
+
+
+h3 {
+	font-size: 15px;
+	font-weight: bold;
+	font-family: arial, verdana, sans-serif;
+	color: blue;
+}
+
+
+/* header */
+
+#header {
+	width: 100%;
+	background-color: #e5e5e5;
+	position: fixed;
+	-moz-box-shadow: 0px 4px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0px 4px 3px rgba(0,0,0,0.3);
+	box-shadow: 0px 4px 3px rgba(0,0,0,0.3);
+	
+	
+
+}
+
+#header .container {
+	width: 100%;
+	min-width: 1000px;
+	height: 30px;
+	margin: 0 auto 0 auto;
+	padding: 15px 0 0 0;
+
+}
+
+#header .logo {
+	display: inline-block;
+	width: 100px;
+	float: left;
+	margin: 0 0 0 10px;
+}
+
+#header .logo img {
+	float: left;
+	margin: -8px 10px 5px 0;
+}
+
+#header .twitter {
+	display: inline-block;
+	float: right;
+	margin: -2px 10px 0 0; 
+
+}
+
+#header .nav {
+	display: inline-block;
+	width: 360px;
+	float: right;
+	margin: -3px 5px 0 -5px;
+}
+
+#header span {
+	margin: 3px 10px 0 10px;
+	display: inline-block;
+}
+
+#header .twitter {
+	color: blue;
+}
+
+
+/* -------------------- INDEX -------------------- */
+
+#index_info {
+	width: 100%;
+	height: 390px;
+	padding: 30px 0 0 0;
+	background-color: #fff;
+	background-image: url('images/bg.jpg');
+}
+#index_content {
+	text-align: center;
+	vertical-align: middle;
+	background-image: url('images/bg.png');
+	height: 100%;
+}
+
+#index_search{}
+#index_search input {}
+#index_search button {}
+
+
+
+/* ---------------- QUERY ENTERED ---------------- */
+/* graphs & stats */
+
+#info {
+	width: 100%;
+	height: 350px;
+	padding: 30px 0 0 0;
+	background-color: #fff;
+	background-image: url('images/bg.png');
+}
+
+#info img{
+	margin: 65px auto 0 auto;
+	text-align: center;
+	display: block;
+}
+
+.search {
+	width: 100%;
+	height: 50px;
+	background-color: #dddddd;
+	text-align: center;
+	font-family: arial, verdana, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+
+	border-top: 1px solid #a9a9a9;
+	border-bottom: 1px solid #a9a9a9;
+	
+
+}
+
+#search input[type="text"] {
+    background: url(images/search-white.png) no-repeat 10px 6px #fcfcfc;
+    border: 1px solid #bdbdbd;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #bebebe;
+    width: 150px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    position: relative;
+   	text-align: center;
+   	margin: 10px 0 0 0;
+    }
+
+#search input[type="text"]:focus {
+    width: 200px;
+    }
+
+
+
+/* content */
+
+#results {
+	padding: 50px 0 0 0;
+	text-align: center;
+	font-size: 25px;
+	color: #898989;
+
+}
+
+#results .for{
+	font-style: italic;
+	color: #000;
+}
+
+#results .query{
+	font-style: none;
+
+}
+#results br {
+	padding: 5px;
+}
+
+#content {
+	text-align: center;
+	padding: 30px 0 0 0;
+	vertical-align: middle;
+}
+
+#tweet {
+	width: 401px;
+	height: 160px;
+	margin: 10px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 6px;
+	vertical-align: top;
+}
+
+.neg { border: 5px solid #d14133;}
+.pos { border: 5px solid #3ca734;}
+.neu { border: 5px solid gray;}
+
+#tweet .header {
+	width:400px;
+	height: 35px;
+}
+
+#tweet img {
+
+}
+
+#tweet .username {
+
+}
+
+#tweet .handle {
+
+}
+
+#tweet .message {}
+
+#tweet button {}
+
+#tweet .remaining_characters {}
+
+
